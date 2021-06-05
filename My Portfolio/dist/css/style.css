@@ -16,6 +16,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,10 +31,11 @@ img {
 h1 {
   font-weight: 100;
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .main-container {
+  height: 100vh;
   max-width: 1440px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -41,10 +43,10 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: auto;
   background-color: #53a0cb;
   position: relative;
-  height: 100vh;
+  margin: auto;
+  padding: 50px 0;
 }
 
 .main-container .main-photo {
@@ -52,6 +54,8 @@ h1 {
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px #151515;
+          box-shadow: 0px 0px 10px #151515;
 }
 
 .main-container .main-photo img {
@@ -62,6 +66,8 @@ h1 {
 
 .main-container .intro-title {
   text-align: center;
+  margin-bottom: 4rem;
+  cursor: default;
 }
 
 .social-icons {
@@ -82,10 +88,30 @@ h1 {
   background-color: white;
   border-radius: 50%;
   margin: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.social-icons .icon-container:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .social-icons .socials {
   margin: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.social-icons .socials:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .social-icons .codecademy {
@@ -100,8 +126,8 @@ h1 {
 
 .social-icons .fa-envelope {
   color: #f0db4f;
-  -webkit-filter: drop-shadow(0px 0px 1px #151515);
-          filter: drop-shadow(0px 0px 1px #151515);
+  -webkit-filter: drop-shadow(0px 0px 1px #4b4b4b);
+          filter: drop-shadow(0px 0px 1px #4b4b4b);
 }
 
 .social-icons .fa-linkedin-in {
@@ -112,12 +138,63 @@ h1 {
   color: #296ce4;
 }
 
+.site-mode {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.site-mode .mode-button {
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.site-mode .mode-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.site-mode .bulb-on {
+  color: white;
+  -webkit-filter: drop-shadow(0px 0px 1px #151515);
+          filter: drop-shadow(0px 0px 1px #151515);
+}
+
+.site-mode .fa-adjust {
+  color: #f0db4f;
+  -webkit-filter: drop-shadow(0px 0px 1px #151515);
+          filter: drop-shadow(0px 0px 1px #151515);
+}
+
+.site-mode .bulb-off {
+  color: black;
+  -webkit-filter: drop-shadow(0px 0px 1px #151515);
+          filter: drop-shadow(0px 0px 1px #151515);
+}
+
 .to-bottom {
   width: 46px;
   height: 46px;
   background-color: white;
   border-radius: 50%;
   position: relative;
+  -webkit-box-shadow: 0px 0px 5px #151515;
+          box-shadow: 0px 0px 5px #151515;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
 }
 
 .to-bottom::after {
@@ -132,5 +209,10 @@ h1 {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
           transform: translateX(-50%) rotate(45deg);
+}
+
+.to-bottom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */

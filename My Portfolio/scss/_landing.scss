@@ -1,17 +1,20 @@
+// Container, photo and title styles
 .main-container {
+    height: 100vh;
     max-width: 1440px;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto;
     background-color: $light-blue;
     position: relative;
-    height: 100vh;
+    margin: auto;
+    padding: 50px 0;
 
     .main-photo {
         width: 300px;
         height: 300px;
         border-radius: 50%;
         overflow: hidden;
+        box-shadow: 0px 0px 10px $shadow-dark;
 
         img {
             height: 100%;
@@ -21,10 +24,13 @@
 
     .intro-title {
         text-align: center;
+        margin-bottom: 4rem;
+        cursor: default;
     }
 }
 
 
+// Social icons from the left side of the page styles. 
 .social-icons {
     flex-direction: column;
     position: absolute;
@@ -32,16 +38,28 @@
     left: 5%;
     transform: translateY(-50%);
 
-    .icon-container {
+    .icon-container { // Container for Github and Facebook icons.
         width: 45px;
         height: 45px;
         background-color: $main-white;
         border-radius: 50%;
         margin: 10px;
+        cursor: pointer;
+        transition: transform 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
-    .socials {
+    .socials {  // Container for all icons except for Github and Facebook.
         margin: 10px;
+        cursor: pointer;
+        transition: transform 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .codecademy {
@@ -56,7 +74,7 @@
 
     .fa-envelope {
         color: $main-accent;
-        filter: drop-shadow(0px 0px 1px $shadow-dark);
+        filter: drop-shadow(0px 0px 1px rgb(75, 75, 75));
     }
 
     .fa-linkedin-in {
@@ -69,12 +87,51 @@
 }
 
 
+// Day/night mode icons from the right side of the page styles. 
+.site-mode {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+
+    .mode-button {
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .bulb-on {
+        color: $main-white;
+        filter: drop-shadow(0px 0px 1px $shadow-dark);
+    }
+
+    .fa-adjust {
+        color: $main-accent;
+        filter: drop-shadow(0px 0px 1px $shadow-dark);
+    }
+
+    .bulb-off {
+        color: rgb(0, 0, 0);
+        filter: drop-shadow(0px 0px 1px $shadow-dark);
+    }
+}
+
+
+// Button that brings user to next pages.
 .to-bottom {
     width: 46px;
     height: 46px;
     background-color: $main-white;
     border-radius: 50%;
     position: relative;
+    box-shadow: (0px 0px 5px $shadow-dark);
+    cursor: pointer;
+    transition: transform 200ms ease-out;
 
     &::after {
         content: '';
@@ -87,5 +144,9 @@
         top: 15%;
         left: 50%;
         transform: translateX(-50%) rotate(45deg);
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
 }
