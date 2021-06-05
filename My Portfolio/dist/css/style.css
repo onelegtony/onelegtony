@@ -70,118 +70,6 @@ h1 {
   cursor: default;
 }
 
-.social-icons {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.social-icons .icon-container {
-  width: 45px;
-  height: 45px;
-  background-color: white;
-  border-radius: 50%;
-  margin: 10px;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  transition: -webkit-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-}
-
-.social-icons .icon-container:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.social-icons .socials {
-  margin: 10px;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  transition: -webkit-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-}
-
-.social-icons .socials:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.social-icons .codecademy {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-}
-
-.social-icons .fa-github {
-  color: black;
-}
-
-.social-icons .fa-envelope {
-  color: #f0db4f;
-  -webkit-filter: drop-shadow(0px 0px 1px #4b4b4b);
-          filter: drop-shadow(0px 0px 1px #4b4b4b);
-}
-
-.social-icons .fa-linkedin-in {
-  color: #2466c2;
-}
-
-.social-icons .fa-facebook {
-  color: #296ce4;
-}
-
-.site-mode {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.site-mode .mode-button {
-  margin: 10px;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  transition: -webkit-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-}
-
-.site-mode .mode-button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.site-mode .bulb-on {
-  color: white;
-  -webkit-filter: drop-shadow(0px 0px 1px #151515);
-          filter: drop-shadow(0px 0px 1px #151515);
-}
-
-.site-mode .fa-adjust {
-  color: #f0db4f;
-  -webkit-filter: drop-shadow(0px 0px 1px #151515);
-          filter: drop-shadow(0px 0px 1px #151515);
-}
-
-.site-mode .bulb-off {
-  color: black;
-  -webkit-filter: drop-shadow(0px 0px 1px #151515);
-          filter: drop-shadow(0px 0px 1px #151515);
-}
-
 .to-bottom {
   width: 46px;
   height: 46px;
@@ -214,5 +102,146 @@ h1 {
 .to-bottom:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.social-icons {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.social-icons .git-icon,
+.social-icons .fb-icon {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.social-icons .git-icon:hover,
+.social-icons .fb-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.social-icons .git-icon {
+  -webkit-transform: translateY(66px);
+          transform: translateY(66px);
+  z-index: 9;
+}
+
+.social-icons .fb-icon {
+  -webkit-transform: translateY(-135px);
+          transform: translateY(-135px);
+  z-index: 9;
+}
+
+.social-icons .socials {
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.social-icons .socials:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.social-icons .codecademy {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  -webkit-transform: translateY(132px);
+          transform: translateY(132px);
+  z-index: 9;
+}
+
+.social-icons .fa-github {
+  color: black;
+  z-index: 9;
+}
+
+.social-icons .fa-envelope {
+  color: white;
+  -webkit-filter: drop-shadow(0px 0px 1px #4b4b4b);
+          filter: drop-shadow(0px 0px 1px #4b4b4b);
+  z-index: 10;
+}
+
+.social-icons .fa-linkedin-in {
+  color: #2466c2;
+  -webkit-transform: translateY(-66px);
+          transform: translateY(-66px);
+  z-index: 9;
+}
+
+.social-icons .fa-facebook {
+  color: #296ce4;
+  z-index: 9;
+}
+
+.site-mode {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.site-mode .mode-buttons {
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.site-mode .mode-buttons:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.site-mode .bulb-on {
+  color: #f0db4f;
+  -webkit-filter: drop-shadow(0px 0px 1px #151515);
+          filter: drop-shadow(0px 0px 1px #151515);
+  -webkit-transform: translateY(66px);
+          transform: translateY(66px);
+  z-index: 9;
+}
+
+.site-mode .fa-adjust {
+  color: white;
+  -webkit-filter: drop-shadow(0px 0px 1px #151515);
+          filter: drop-shadow(0px 0px 1px #151515);
+  z-index: 10;
+}
+
+.site-mode .bulb-off {
+  color: black;
+  -webkit-filter: drop-shadow(0px 0px 1px #151515);
+          filter: drop-shadow(0px 0px 1px #151515);
+  -webkit-transform: translateY(-66px);
+          transform: translateY(-66px);
+  z-index: 9;
+}
+
+.icon-hide {
+  opacity: 0;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

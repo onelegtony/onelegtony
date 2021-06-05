@@ -1,0 +1,121 @@
+// Social icons from the left side of the page styles. 
+.social-icons {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+    .git-icon,
+    .fb-icon { // Containers for Github and Facebook icons.
+        width: 45px;
+        height: 45px;
+        background-color: $main-white;
+        border-radius: 50%;
+        margin: 10px;
+        cursor: pointer;
+        transition: all 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .git-icon {
+        transform: translateY(66px);
+        z-index: 9;
+    }
+
+    .fb-icon {
+        transform: translateY(-135px);
+        z-index: 9;
+    }
+
+    .socials {  // Container for all icons except for Github and Facebook.
+        margin: 10px;
+        cursor: pointer;
+        transition: all 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .codecademy {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        transform: translateY(132px);
+        z-index: 9;
+    }
+
+    .fa-github {
+        color: rgb(0, 0, 0);
+        z-index: 9;
+    }
+
+    .fa-envelope {
+        color: $main-white;
+        filter: drop-shadow(0px 0px 1px rgb(75, 75, 75));
+        z-index: 10;
+    }
+
+    .fa-linkedin-in {
+        color: rgb(36, 102, 194);
+        transform: translateY(-66px);
+        z-index: 9;
+    }
+
+    .fa-facebook {
+        color: rgb(41, 108, 228);
+        z-index: 9;
+    }
+}
+
+
+
+// Day/night mode icons from the right side of the page styles. 
+.site-mode {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+
+    .mode-buttons {
+        margin: 10px;
+        cursor: pointer;
+        transition: all 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .bulb-on {
+        color: $main-accent;
+        filter: drop-shadow(0px 0px 1px $shadow-dark);
+        transform: translateY(66px);
+        z-index: 9;
+    }
+
+    .fa-adjust {
+        color: $main-white;
+        filter: drop-shadow(0px 0px 1px $shadow-dark);
+        z-index: 10;
+    }
+
+    .bulb-off {
+        color: rgb(0, 0, 0);
+        filter: drop-shadow(0px 0px 1px $shadow-dark);
+        transform: translateY(-66px);
+        z-index: 9;
+    }
+}
+
+
+
+.icon-hide {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -15,22 +15,32 @@
     <div class="main-container flex">
         <!-- Contact icons from the left side -->
         <div class="social-icons flex">
-            <img class="codecademy socials" src="./img/codecademy.png" alt="">
-            <div class="icon-container flex">
+            <!-- Codecademy -->
+            <img class="codecademy socials icon-hide" id="social-button" src="./img/codecademy.png" alt="">
+
+            <!-- GitHub -->
+            <div class="git-icon flex icon-hide" id="social-button">
                 <i class="fab fa-github fa-3x"></i>
             </div>
+
+            <!-- Menu toggle (envelope) -->
             <i class="fas fa-envelope fa-3x socials"></i>
-            <i class="fab fa-linkedin-in fa-3x socials"></i>
-            <div class="icon-container flex">
+
+            <!-- LinkedIn -->
+            <i class="fab fa-linkedin-in fa-3x socials icon-hide" id="social-button"></i>
+
+            <!-- Facebook -->
+            <div class="fb-icon flex icon-hide" id="social-button">
                 <i class="fab fa-facebook fa-3x"></i> 
             </div>
+
         </div>
 
         <!-- Day/night mode icons from the right side -->
         <div class="site-mode flex">
-            <i class="fas fa-lightbulb fa-3x mode-button bulb-on"></i>
-            <i class="fas fa-adjust fa-3x mode-button"></i>
-            <i class="fas fa-lightbulb fa-3x mode-button bulb-off"></i>
+            <i class="fas fa-lightbulb fa-3x mode-buttons bulb-on icon-hide"></i>
+            <i class="fas fa-adjust fa-3x mode-buttons"></i>
+            <i class="fas fa-lightbulb fa-3x mode-buttons bulb-off icon-hide"></i>
         </div>
 
         <!-- Landing hero -->
