@@ -1,18 +1,30 @@
 const socialsButton = document.querySelector('.fa-envelope');
+const socialsClose = document.querySelector('.fa-times');
+const socialsIcons = document.querySelector('.social-icons');
+
 
 socialsButton.addEventListener('click', () => {
-    let socialIcons = document.querySelectorAll('#social-button');
+    socialsButton.classList.toggle('menu-button-out');
+    setTimeout(() => {
+        socialsIcons.classList.toggle('menu-active');
+        socialsButton.classList.toggle('x-icon');
+        socialsClose.classList.toggle('x-icon');
+    }, 400);
+});
 
-    for (let i = 0; i < socialIcons.length; i++) {
-        if (socialIcons[i].classList.contains('icon-hide')) {
-            socialIcons[i].classList.remove('icon-hide');
-            socialIcons[i].style.transform = 'translateY(0)';
-        } else {
-            document.querySelector('.codecademy').style.transform = 'translateY(132px)';
-            document.querySelector('.git-icon').style.transform = 'translateY(66px)';
-            document.querySelector('.fa-linkedin-in').style.transform = 'translateY(-66px)';
-            document.querySelector('.fb-icon').style.transform = 'translateY(-135px)';
-            socialIcons[i].classList.add('icon-hide');
-        };
-    };
-})
+
+socialsClose.addEventListener('click', () => {
+    socialsIcons.classList.toggle('menu-active');
+
+    setTimeout(() => {
+        socialsButton.classList.toggle('x-icon');
+    }, 300);
+
+    setTimeout(() => {
+        socialsClose.classList.toggle('x-icon');
+        socialsButton.classList.toggle('menu-button-out');
+    }, 400);
+});
+
+
+
