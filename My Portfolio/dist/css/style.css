@@ -22,6 +22,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
+  background-color: #53a0cb;
 }
 
 img {
@@ -124,30 +125,46 @@ h1 {
 }
 
 .social-icons .socials {
-  padding: 0 20px;
+  margin: 0 20px;
   cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  width: 35px;
+  height: 35px;
+}
+
+.social-icons .socials:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .social-icons .fa-envelope {
   color: white;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
+  cursor: pointer;
+  width: 46px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.social-icons .fa-times {
-  color: #f0db4f;
-  -webkit-filter: drop-shadow(0px 0px 3px #151515);
-          filter: drop-shadow(0px 0px 3px #151515);
+.social-icons .icon-times {
+  color: #151515;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
+  width: 33px;
+  height: 33px;
 }
 
-.social-icons .fa-github {
+.social-icons .icon-github {
   color: #090d10;
 }
 
-.social-icons .fa-linkedin-in {
+.social-icons .icon-linkedin {
   color: #2466c2;
+  width: 35px;
+  height: 35px;
 }
 
 .social-icons .fa-code {
@@ -166,6 +183,11 @@ h1 {
 .menu-button-out {
   -webkit-transform: translateY(150%);
           transform: translateY(150%);
+}
+
+.menu-button-out:hover {
+  -webkit-transform: translateY(150%) scale(1.1);
+          transform: translateY(150%) scale(1.1);
 }
 
 .x-icon {

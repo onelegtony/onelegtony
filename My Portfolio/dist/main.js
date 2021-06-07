@@ -1,5 +1,5 @@
 const socialsButton = document.querySelector('.fa-envelope');
-const socialsClose = document.querySelector('.fa-times');
+const socialsClose = document.querySelector('.icon-times');
 const socialsIcons = document.querySelector('.social-icons');
 
 

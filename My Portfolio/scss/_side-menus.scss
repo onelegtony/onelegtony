@@ -11,27 +11,42 @@
     transition: all 300ms ease-out;
 
     .socials {
-        padding: 0 20px;
+        margin: 0 20px;
         cursor: pointer;
+        transition: all 300ms ease;
+        width: 35px;
+        height: 35px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .fa-envelope {
         color: $main-white;
         transition: all 300ms ease-out;
+        cursor: pointer;
+        width: 46px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
     }
 
-    .fa-times {
-        color: $main-accent;
-        filter: drop-shadow(0px 0px 3px $main-black);
+    .icon-times {
+        color: $main-black;
         transition: all 300ms ease-out;
+        width: 33px;
+        height: 33px;
     }
 
-    .fa-github {
+    .icon-github {
         color: rgb(9, 13, 16);
     }
 
-    .fa-linkedin-in {
+    .icon-linkedin {
         color: rgb(36, 102, 194);
+        width: 35px;
+        height: 35px;
     }
 
     .fa-code {
@@ -50,6 +65,10 @@
 
 .menu-button-out {
     transform: translateY(150%);
+
+    &:hover {
+        transform: translateY(150%) scale(1.1);
+    }
 }
 
 .x-icon {
