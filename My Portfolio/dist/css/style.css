@@ -22,7 +22,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  background-color: #53a0cb;
+  background-color: white;
 }
 
 img {
@@ -35,6 +35,11 @@ h1 {
   font-size: 3.5rem;
 }
 
+.landing-page {
+  background-color: #53a0cb;
+  overflow-y: hidden;
+}
+
 .main-container {
   height: 100vh;
   max-width: 1440px;
@@ -45,7 +50,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #53a0cb;
   position: relative;
   margin: auto;
   padding-top: 50px;
@@ -62,6 +66,7 @@ h1 {
 
 .main-container .main-photo img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -75,7 +80,6 @@ h1 {
 .to-bottom {
   width: 46px;
   height: 46px;
-  background-color: white;
   border-radius: 50%;
   position: relative;
   -webkit-box-shadow: 0px 0px 5px #464646;
@@ -87,25 +91,12 @@ h1 {
   transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
 }
 
-.to-bottom::after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-bottom: 3px solid #151515;
-  border-right: 3px solid #151515;
-  border-radius: 1px;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-          transform: translateX(-50%) rotate(45deg);
-}
-
 .to-bottom:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+/*======= Social icons that open up in a menu. =======*/
 .social-icons {
   position: absolute;
   top: 0;
@@ -116,8 +107,6 @@ h1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-shadow: 0px 0px 10px #464646;
-          box-shadow: 0px 0px 10px #464646;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: all 300ms ease-out;
@@ -138,66 +127,100 @@ h1 {
           transform: scale(1.1);
 }
 
-.social-icons .fa-envelope {
-  color: white;
+.social-icons .envelope-icon {
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   cursor: pointer;
   width: 46px;
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 20px;
+  -webkit-filter: drop-shadow(0px 0px 5px #464646);
+          filter: drop-shadow(0px 0px 5px #464646);
 }
 
-.social-icons .icon-times {
-  color: #151515;
+/*======= Day/night mode toggle menu. =======*/
+.site-modes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  padding: 9px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateY(-101%);
+          transform: translateY(-101%);
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
-  width: 33px;
-  height: 33px;
 }
 
-.social-icons .icon-github {
-  color: #090d10;
+.site-modes > img {
+  margin: 0 20px;
 }
 
-.social-icons .icon-linkedin {
-  color: #2466c2;
+.site-modes .modes-toggle {
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  cursor: pointer;
+  width: 40px;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  -webkit-filter: drop-shadow(0px 0px 5px #464646);
+          filter: drop-shadow(0px 0px 5px #464646);
+}
+
+.site-modes .modes-buttons {
+  height: 38px;
+  width: auto;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.site-modes .modes-buttons:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.menus-close-button {
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   width: 35px;
   height: 35px;
 }
 
-.social-icons .fa-code {
-  color: #10162f;
+.menus-close-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.social-icons .fa-facebook {
-  color: #296be3;
-}
-
-.menu-active {
+.menu-open {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+  -webkit-box-shadow: 0px 0px 10px #464646;
+          box-shadow: 0px 0px 10px #464646;
 }
 
-.menu-button-out {
+.menu-button-visible {
   -webkit-transform: translateY(150%);
           transform: translateY(150%);
 }
 
-.menu-button-out:hover {
+.menu-button-visible:hover {
   -webkit-transform: translateY(150%) scale(1.1);
           transform: translateY(150%) scale(1.1);
 }
 
-.x-icon {
+.hide {
   display: none;
 }
 
-.site-mode {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
+.about-section {
+  min-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background-color: $light-blue;
+    background-color: $main-white;
 }
 
 img {
@@ -27,4 +27,5 @@ h1 {
 
 
 @import 'landing';
-@import 'side-menus';
+@import 'menus';
+@import 'about';
