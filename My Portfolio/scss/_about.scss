@@ -1,3 +1,42 @@
-.about-section {
+.about-page {
     min-height: 100vh;
+    flex-direction: column;
+    gap: 50px;
+    transition: all 500ms ease-in-out;
+}
+
+.about-title {
+    width: 85%;
+    height: 40vh;
+    padding: 15px 40px;
+    transition: all 500ms ease-in-out;
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+}
+
+.skills-box {
+    text-align: center;
+
+    .all-boxes {
+        gap: 30px;
+
+        .boxes {
+            width: 180px;
+            height: 180px;
+            margin: 20px;
+            flex-direction: column;
+            gap: 15px;
+            transition: all 500ms ease-in-out;
+
+            & > img {
+                height: 60px;
+            }
+        }
+    }
 }

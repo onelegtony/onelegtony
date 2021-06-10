@@ -1,7 +1,7 @@
 // Container, photo and title styles
 .landing-page {
-    background-color: $light-blue;
     overflow-y: hidden;
+    transition: all 500ms ease-in-out;
 }
 
 .main-container {

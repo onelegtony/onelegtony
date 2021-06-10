@@ -20,12 +20,32 @@ img {
 }
 
 h1 {
+    font-size: 3.5rem;
     font-weight: weight(thin);
     color: $main-white;
-    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: weight(thin);
+    color: $main-black;
+    transition: all 500ms ease-in-out;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: weight(thin);
+    color: $main-black;
+    transition: all 500ms ease-in-out;
+}
+
+p {
+    font-weight: weight(xtra-light);
+    color: $main-white;
 }
 
 
 @import 'landing';
 @import 'menus';
 @import 'about';
+@import 'portfolio';

@@ -7,12 +7,11 @@
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
   <title>Alexander Cozub</title>
 </head>
 <body>
-    <section class="landing-page">
+    <section class="landing-page light-mode-one">
         <div class="main-container flex">
             <!-- Contact icons from the left side -->
             <div class="social-icons flex">
@@ -52,13 +51,59 @@
             </div>
     
             <!-- Button to other pages below -->
-            <img class="to-bottom" src="./img/arrow.png">
+            <a href="#temporary"><img class="to-bottom" src="./img/arrow.png"></a>
         </div>
     </section>
-    <section class="about-section">
-        <h2>hello</h2>
+
+
+    <section class="about-page flex light-mode-two">
+        <div class="about-title light-mode-one shadow-light">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur, suscipit facilis dicta et cum, mollitia sint tempora consectetur veritatis neque sapiente, a repellat non fugiat consequuntur sequi. Laboriosam reprehenderit alias ratione, odio eaque dolores eum dolorem velit voluptatem dolore quibusdam sunt tempora voluptate accusamus cumque perspiciatis nemo suscipit omnis ut quam consectetur mollitia adipisci reiciendis! Et eos consequuntur quod delectus ad officia minima dignissimos impedit quia. Nemo, totam omnis?</p>
+        </div>
+        <div class="skills-box">
+            <h2 class="text-color">My main skills so far:</h2>
+            <div class="all-boxes flex">
+                <div class="boxes flex shadow-light">
+                    <img src="./img/html.png" alt="">
+                    <h3 class="text-color">HTML5</h3>
+                </div>
+                <div class="boxes flex shadow-light">
+                    <img src="./img/css.png" alt="">
+                    <h3 class="text-color">CSS3</h3>
+                </div>
+                <div class="boxes flex shadow-light">
+                    <img src="./img/sass.png" alt="">
+                    <h3 class="text-color">SASS</h3>
+                </div>
+                <div class="boxes flex shadow-light">
+                    <img src="./img/javascript.png" alt="">
+                    <h3 class="text-color">JavaScript</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src="./main.js" type="text/javascript"></script>
+    <section class="portfolio-page flex light-mode-one" id="temporary">
+        <div class="portfolio-title flex light-mode-two">
+            <h1 class="portfolio-text">My recent projects</h1>
+        </div>
+        <div class="portfolio-boxes flex">
+            <div class="projects project-one">
+                <h3>Vikingflix <br> Movies</h3>
+            </div>
+            <div class="projects project-two">
+                <h3>Time Killer <br> Watch</h3>
+            </div>
+            <div class="projects project-three">
+                <h3>Rock, Paper, <br> Scissors</h3>
+            </div>
+            <div class="projects project-four">
+                <h3>Alex <br> Photography</h3>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
 </body>
 </html>

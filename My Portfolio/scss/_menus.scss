@@ -1,6 +1,6 @@
 /*======= Social icons that open up in a menu. =======*/
 .social-icons {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: white;
@@ -9,6 +9,7 @@
     justify-content: flex-start;
     transform: translateY(-100%);
     transition: all 300ms ease-out;
+    z-index: 100;
 
     .socials {
         margin: 0 20px;
@@ -37,7 +38,7 @@
 
 /*======= Day/night mode toggle menu. =======*/
 .site-modes {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: white;
@@ -46,6 +47,7 @@
     justify-content: flex-end;
     transform: translateY(-101%);
     transition: all 300ms ease-out;
+    z-index: 100;
 
     & > img {
         margin: 0 20px;

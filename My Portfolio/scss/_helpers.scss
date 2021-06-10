@@ -26,4 +26,35 @@ $shadow-light: rgb(192, 192, 192);
 
 $medium-blue: rgb(37, 83, 108);
 $dark-blue: rgb(21, 27, 37);
-$shadow-dark: rgb(70, 70, 70);
+$shadow-dark: rgb(20, 20, 20);
+
+
+// Light mode colors.
+.light-mode-one {
+    background-color: $light-blue;
+}
+
+.light-mode-two {
+    background-color: $main-white;
+}
+
+// Dark mode colors.
+.dark-mode-one {
+    background-color: $dark-blue;
+}
+
+.dark-mode-two {
+    background-color: $medium-blue;
+}
+
+.shadow-light {
+    box-shadow: 2px 2px 10px $shadow-light;
+}
+
+.shadow-dark {
+    box-shadow: 2px 2px 10px $shadow-dark;
+}
+
+.dark-mode-text {
+    color: $main-white;
+}
