@@ -19,9 +19,3 @@ lightModeButton.addEventListener('click', lightModeToggle);
 darkModeButton.addEventListener('click', darkModeToggle);
 
 
-
-
-
-
-
-
