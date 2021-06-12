@@ -19,3 +19,18 @@ lightModeButton.addEventListener('click', lightModeToggle);
 darkModeButton.addEventListener('click', darkModeToggle);
 
 
+
+const projectBoxes = document.querySelectorAll('.projects');
+const projectImage = document.querySelectorAll('.portfolio-img-ctr');
+
+projectBoxes.forEach((box, index) => {
+    box.addEventListener('mouseover', () => {
+        box.firstElementChild.style.opacity = 1;
+        projectImage[index].style.transform = 'scale(1.2)';
+    })
+    box.addEventListener('mouseout', () => {
+        box.firstElementChild.style.opacity = 0;
+        projectImage[index].style.transform = 'scale(1)';
+    })
+})
+
