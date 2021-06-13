@@ -2,7 +2,9 @@
 
 @import 'helpers';
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -56,8 +58,26 @@ li {
     font-weight: weight(thin);
 }
 
+a {
+    text-decoration: none;
+    color: $main-black;
+}
+
+button,
+input, 
+textarea,
+::placeholder {
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: weight(xtra-light);
+}
+
 
 @import 'landing';
 @import 'menus';
 @import 'about';
 @import 'portfolio';
+@import 'contact';
+@import 'mobile';
