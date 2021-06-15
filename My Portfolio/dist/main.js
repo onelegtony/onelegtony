@@ -14,9 +14,20 @@ modesToggle.addEventListener('click', openModesFunction);
 closeModes.addEventListener('click', closeModesFunction);
 
 
-//Changing color modes.
-lightModeButton.addEventListener('click', lightModeToggle);
-darkModeButton.addEventListener('click', darkModeToggle);
+// Changing color modes.
+lightModeButton.addEventListener('click', lightModeToggle); // Switch to light.
+darkModeButton.addEventListener('click', darkModeToggle); // Switch to dark.
+
+// Automatically change color mode depending on time of the day.
+const dateNow = new Date();
+const hourNow = dateNow.getHours();
+
+if (hourNow >= 8 && hourNow < 20) {
+    lightModeToggle();
+} else if (hourNow >= 20 || hourNow < 8) {
+    darkModeToggle();
+}
+
 
 
 
@@ -34,6 +45,36 @@ projectBoxes.forEach((box, index) => {
     })
 })
 
+
+// Form submission script.
+const form = document.querySelector('#my-form');
+
+const handleSubmit = async(event) => {
+    event.preventDefault();
+    const statusSuccess = document.querySelector('.message-sent');
+    const statusError = document.querySelector('.message-sent');
+    const data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        statusSuccess.classList.remove('hidden');
+        setTimeout(() => {
+            statusSuccess.classList.add('hidden');
+        }, 2000);
+        form.reset();
+    }).catch(error => {
+        statusError.classList.remove('hidden');
+        setTimeout(() => {
+            statusError.classList.add('hidden');
+        }, 2000);
+    });
+}
+
+form.addEventListener('submit', handleSubmit);
 
 
 

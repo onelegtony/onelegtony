@@ -20,16 +20,16 @@
                 <img class="menus-close-button" id="close-socials" src="./img/xbutton.png" alt="">
     
                 <!-- GitHub -->
-                <img class="socials" src="./img/github.png" alt="">
+                <a href="https://github.com/onelegtony" target="_blank" class="flex"><img class="socials" src="./img/github.png" alt=""></a>
     
                 <!-- LinkedIn -->
-                <img class="socials" src="./img/linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/alexander-cozub/" target="_blank" class="flex"><img class="socials" src="./img/linkedin.png" alt=""></a>
     
                 <!-- Codecademy -->
-                <img class="socials" src="./img/codecademy.png" alt="">
+                <a href="https://www.codecademy.com/profiles/onelegtony" target="_blank" class="flex"><img class="socials" src="./img/codecademy.png" alt=""></a>
     
                 <!-- Facebook -->
-                <img class="socials" src="./img/facebook.png" alt="">
+                <a href="https://www.facebook.com/alexandercozub" target="_blank" class="flex"><img class="socials" src="./img/facebook.png" alt=""></a>
     
             </div>
     
@@ -48,10 +48,12 @@
             <div class="intro-title">
                 <h1>My name is Sasha.</h1>
                 <h1>I am a Web Developer.</h1>
+
+                <!-- Button to other pages below -->
+                <a href="#projects"><img class="to-bottom" src="./img/arrow.png"></a>
             </div>
     
-            <!-- Button to other pages below -->
-            <a href="#projects"><img class="to-bottom" src="./img/arrow.png"></a>
+            
         </div>
     </section>
 
@@ -152,19 +154,18 @@
             
             <!-- Contaiter with the form and image -->
             <div class="form-ctr flex">
-                <form action="" class="form-box flex light-mode-one">
-                    <input type="text" id="name" placeholder="Your name" autocomplete="off">
-                    <input type="email" id="email" placeholder="Your e-mail" autocomplete="off">
-                    <textarea name="message" id="message" placeholder="Your message" minlength="10" autocomplete="off"></textarea>
+                <form action="https://formspree.io/f/myyljpbz" method="POST" class="form-box flex light-mode-one" id="my-form">
+                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off" required>
+                    <input type="email" id="email" name="email" placeholder="Your e-mail" autocomplete="off" required>
+                    <textarea name="message" id="message" placeholder="Your message" minlength="10" autocomplete="off" required></textarea>
                     <div class="submit-section flex">
                         <button type="submit" class="sub-btn">Send message</button>
-                        <a href="" class="mailto flex">@</a>
-                    </div> <!-- href="mailto:" -->
+                    </div>
                 </form>
     
                 <div class="form-side-image flex">
                     <img src="./img/contact-pic.png" alt="">
-                    <button class="ceevee">Download CV</button>
+                    <a href="./cozub.pdf" class="ceevee" download>Download CV</a>
                 </div>
             </div>
     
@@ -172,12 +173,13 @@
             <a href="#landing"><img class="to-top" src="./img/arrow.png"></a>
         </div>
 
-        <!--
-        <div class="thank-you-message flex hidden">
-            <h1>Thank you for your message!</h1>
-            <a href="#contact">Close</a>
+        <div class="message-sent flex hidden">
+            <h2>Thank you for your message!</h2>
         </div>
-        -->
+
+        <div class="message-error flex hidden">
+            <h2>Oops! There was a problem submitting your form...</h2>
+        </div>
     </section>
 
     <script type="module" src="./main.js"></script>
