@@ -60,13 +60,13 @@ const handleSubmit = async(event) => {
         headers: {
             'Accept': 'application/json'
         }
-    }).then(response => {
+    }).then(response => { //Try working with response as well, don't just leave it unused.
         statusSuccess.classList.remove('hidden');
         setTimeout(() => {
             statusSuccess.classList.add('hidden');
         }, 2000);
         form.reset();
-    }).catch(error => {
+    }).catch(error => { //Try working with error as well
         statusError.classList.remove('hidden');
         setTimeout(() => {
             statusError.classList.add('hidden');
