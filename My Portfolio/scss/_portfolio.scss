@@ -112,13 +112,12 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
-    opacity: 0;
     z-index: 2;
     background-color: rgba(0,0,0, 0.8);
     backdrop-filter: blur(2px);
     transition: all 600ms ease;
-    
-    
+    opacity: 0;
+    display: none;
 
     h4 { // Link buttons
         margin: 20px 0;

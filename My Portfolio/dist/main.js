@@ -37,10 +37,16 @@ const projectImage = document.querySelectorAll('.portfolio-img-ctr');
 projectBoxes.forEach((box, index) => {
     box.addEventListener('mouseover', () => {
         box.firstElementChild.style.opacity = 1;
+        setTimeout(() => { // This prevents the invisible buttons with links to be clicked by accident on mobile devices.
+            box.firstElementChild.style.display = 'flex';
+        }, 100);
         projectImage[index].style.transform = 'scale(1.2)';
     })
     box.addEventListener('mouseout', () => {
         box.firstElementChild.style.opacity = 0;
+        setTimeout(() => {
+            box.firstElementChild.style.display = 'none';
+        }, 100);
         projectImage[index].style.transform = 'scale(1)';
     })
 })
