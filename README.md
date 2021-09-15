@@ -2,7 +2,7 @@
 ---
 
  👨🏻‍💻 I am currently on the path of changing carreers and I am studying programming.  
- 📚 I have already learned and had a chance to practice on things like HTML, CSS, SASS, JavaScript, ReactJS, AJAX as well as touched upon few other technologies like Node.js and Mocha.  
+ 📚 I have already learned and had a chance to practice on things like _HTML, CSS, SASS, JavaScript, ReactJS, AJAX_ as well as touched upon few other technologies like _Node.js and Mocha_.  
  💡 At the moment I am doing Full-Stack Engineer course at [Codecademy.com](https://www.codecademy.com/profiles/onelegtony).
  
 ---
