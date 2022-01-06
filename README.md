@@ -2,11 +2,11 @@
 ---
 
  👨🏻‍💻 I am currently on the path of changing carreers and I am studying programming.  
- 📚 I have already learned and had a chance to practice on things like _HTML, CSS, SASS, JavaScript, ReactJS, AJAX_ as well as touched upon few other technologies like _Node.js and Mocha_.  
+ 📚 I have already learned and had a chance to practice on things like _React, Redux, JavaScript, HTML, CSS, SASS, AJAX_ as well as touched upon few other technologies like _Node.js, Mocha, Jest etc._.  
  💡 At the moment I am doing Full-Stack Engineer course at [Codecademy.com](https://www.codecademy.com/profiles/onelegtony).
  
 ---
-🤝 I am always open to new possibilities, challenges, collaborations, jobs and connections
+🤝 I am always open to new possibilities, challenges, collaborations, jobs and connections.
 
 ---
 📫 If you would like to contact me, you can do so at my [website](https://www.sashacozub.com/).
