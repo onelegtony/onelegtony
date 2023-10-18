@@ -1,9 +1,9 @@
 👋🏻 Hi! My name is Sasha!
 ---
 
- 👨🏻‍💻 I am currently on the path of changing carreers and I am studying programming.  
+ 👨🏻‍💻 I am currently on the path of changing carreers and I am Computer Science student.  
  📚 I have already learned and had a chance to practice on things like _React, Redux, JavaScript, HTML, CSS, SASS, AJAX_ as well as touched upon few other technologies like _Node.js, Mocha, Jest etc._.  
- 💡 At the moment I am doing Full-Stack Engineer course at [Codecademy.com](https://www.codecademy.com/profiles/onelegtony).
+ 💡 At the moment I am doing Full-Stack Engineer course at [Codecademy.com](https://www.codecademy.com/profiles/sashacozub).
  
 ---
 🤝 I am always open to new possibilities, challenges, collaborations, jobs and connections.
@@ -16,7 +16,7 @@
 - 👀 Recently I really got into programming, but I also love all kinds of technology, photography, movies, music and traveling.
 - 🌱 I’m currently learning everything I can, on top of HTML, CSS and JavaScript.
 - 💞️ I’m looking to collaborate on anything that my knowledge would allow me to.
-- 📫 How to reach me? You can send me a message through my website: https://sashacozub.com
+- 📫 How to reach me? You can send me a message through my website: https://www.sashacozub.com/
 --->
 
 <!---
